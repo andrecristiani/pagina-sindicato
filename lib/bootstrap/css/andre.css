@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+	font-family: Helvetica;
+	background-color: #93B874;
+}
+
+header{
+	position: relative;
+	background-color: #66BB6A;
+	background-position: 0px 0px;
+	height: 150px;	
+}
+
+.logotipo{
+	width: 100px;
+    height: 100px;
+    margin-top: 35px;
+    margin-left: 2%;
+}
+
+header .container {
+	
+	width: 100%;
+	height: 10px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+header .header-orange {
+	background-color: #f39c12;
+	background-position: 0px 0px;
+	height: 20px;
+}
+
+nav li a{
+	color: white;
+	font-size: 16px;
+}
+
+header img{
+	position: absolute;	
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 3%;
+}
+
+
+
+
+/* Telefones em landscape e abaixo */
+@media (max-width: 480px) { 
+	header{
+		height: 220px;
+	}
+
+	.logotipo{
+		left: 30%;
+	}
+
+ }
+/* Telefone em landscape a tablet em portrait */
+@media (max-width: 767px) { 
+	header{
+		height: 220px;
+	}
+	.logotipo{
+		left: 35%;
+	}
+
+ }
+/* tablet em portrait a landscape e desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	header{
+		height: 220px;
+	}
+
+ }
+/* Desktop grande */
+@media (min-width: 1200px) { 
+ }

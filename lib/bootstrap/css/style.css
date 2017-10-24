@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+body{
+	background-color: #FAFAFA !important;
+	margin: 0;
+	font-family: Helvetica;
+	
+	
+}
+
+footer h1{
+	text-transform: uppercase;
+    font-size: 18px;
+	color: #FFFFFF;
+}
+
+footer hr{
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #060606;
+}
+
+footer p{
+	color: #FFFFFF;
+}
+
+footer{
+	background-color: #2E2E2E;
+	padding: 5px;
+	margin-top: 0px;
+}
+
+address {
+	color: #FFFFFF;
+}
+
+div .container{
+	padding-top: 0px;
+}
+
+.imagem{
+	margin: auto;
+	width: 100%;
+	max-height: 500px;
+}
+
+
+footer img{
+	padding-top: 20px;
+	width: 120px;
+}
+
+header{
+	position: relative;
+	background-color: #088A29;
+	background-position: 0px 0px;
+	height: 150px;	
+}
+
+.carousel-inner {
+    margin-bottom: -20px;
+}
+
+.logotipo{
+	width: 100px;
+    height: 100px;
+    margin-top: 35px;
+    margin-left: 2%;
+}
+
+header .container {
+	
+	width: 100%;
+	height: 10px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+
+
+header .header-orange {
+	background-color: #EE7621;
+	background-position: 0px 0px;
+	height: 20px;
+}
+
+nav li a{
+	color: white;
+	font-size: 16px;
+}
+
+header img{
+	position: absolute;	
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 3%;
+}
+
+
+#estatisticas {
+	background-color: #f39c12;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	clear: both;
+}
+
+#estatisticas p {
+	color: #FDE092;
+	text-transform: uppercase;
+	font-family: 'OpenSans-Light';
+	font-size: 58px;
+	margin-top: 36px;
+}
+#estatisticas p small {
+	color: #fff;
+	font-size: 24px;
+	display: block;
+}
+
+.nav-paginas{
+	margin-left: 5%;
+}
+
+.na-cotacoes .na-tabela {
+	margin-top: 20px;
+	width:100% !important;
+}
+
+.cotacoes{
+	margin-top: 20px;
+}
+
+.cotacoes .btn-group{
+	margin-left: 15%;
+}
+
+.div-cotacao{
+	display: none;
+}
+
+.panel{
+	text-align: center;
+}
+
+.panel .panel-heading{
+	font-size: 30px;
+}
+
+* Telefones em landscape e abaixo */
+@media (max-width: 480px) { 
+	header{
+		height: 220px;
+	}
+
+	.logotipo{
+		left: 32%;
+	}
+
+	.mapa{
+		display: none;
+	}
+
+ }
+/* Telefone em landscape a tablet em portrait */
+@media (max-width: 767px) { 
+	header{
+		height: 460px;
+	}
+	.logotipo{
+		display:block;
+		left: 35%;
+	}
+
+	#estatisticas {
+		height: 500px;
+		margin-bottom: -133px;
+	}
+
+	.mapa{
+		display: none;
+	}
+
+	header .header-orange {
+		height: 85px;
+	}
+
+ }
+/* tablet em portrait a landscape e desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	header{
+		height: 220px;
+	}
+
+ }
+/* Desktop grande */
+@media (min-width: 1200px) { 
+ }
