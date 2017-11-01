@@ -3,9 +3,7 @@
 body{
 	background-color: #FAFAFA !important;
 	margin: 0;
-	font-family: Helvetica;
-	
-	
+	font-family: Helvetica;	
 }
 
 footer h1{
@@ -18,11 +16,15 @@ footer hr{
 	margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #060606;
+    border-top: 1px solid #FFFFFF;
 }
 
-footer p{
+footer p, span, i{
 	color: #FFFFFF;
+}
+
+footer .icones-sociais{
+	justify-content: row;
 }
 
 footer{
@@ -31,7 +33,8 @@ footer{
 	margin-top: 0px;
 }
 
-address {
+footer address, footer .tel {
+	margin-bottom: 8px !important;
 	color: #FFFFFF;
 }
 
@@ -55,7 +58,7 @@ header{
 	position: relative;
 	background-color: #088A29;
 	background-position: 0px 0px;
-	height: 150px;	
+	height: 135px;	
 }
 
 .carousel-inner {
@@ -65,7 +68,7 @@ header{
 .logotipo{
 	width: 100px;
     height: 100px;
-    margin-top: 35px;
+    margin-top: 28px;
     margin-left: 2%;
 }
 
@@ -94,6 +97,15 @@ header .header-orange {
 nav li a{
 	color: white;
 	font-size: 16px;
+}
+
+.menuRodape .linksRodape a {
+	padding: 2px 0;
+}
+
+.copyright p{
+	width: 100%;
+	text-align: center;
 }
 
 header img{
@@ -126,7 +138,7 @@ header img{
 	display: block;
 }
 
-.nav-paginas{
+.nav-paginas {
 	margin-left: 5%;
 }
 
@@ -135,7 +147,7 @@ header img{
 	width:100% !important;
 }
 
-.cotacoes{
+.cotacoes {
 	margin-top: 20px;
 }
 

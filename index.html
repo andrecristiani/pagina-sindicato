@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/style.css"/>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="lib/jquery/jquery.min.js"></script>
 	
   <body>
@@ -18,7 +19,7 @@
   
   <!-- Cabeçalho -->
   <header>
-  <div class="container-header"
+  <div class="container-header">
     <div class="container-logo">
       <img src="img/logof.png" class="logotipo">
     </div>
@@ -32,7 +33,8 @@
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="cotacoes.html">Cotações</a></li>
             <li><a href="#">Galeria</a></li>
-			<li><a href="associese.html">Associe-se</a></li>
+      <li><a href="associese.html">Associe-se</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
            </ul>
            <ul class="nav navbar-nav">
             <form class="navbar-form">
@@ -69,7 +71,7 @@
     <div class="item active">
       <img class="imagem" src="img/img2.jpg" alt="...">
       <div class="carousel-caption">
-        ...
+        <div>Este é um exemplo de div flutuante para informações da imagem</div>
       </div>
     </div>
    	<div class="item">
@@ -108,31 +110,37 @@
   <div class="row">
    <div class="col-xs-12 col-sm-6 col-md-3">
 	<h1>Menu</h1>
-    <nav>
+    <nav class="menuRodape">
 		<ul class="nav">
-			<li><a href="cursos.html">Cursos</a></li>
-			<li><a href="cotacoes.html">Cotações</a></li>
-			<li><a href="#">Galeria</a></li>
-			<li><a href="associese.html">Associe-se</a></li>
+			<li class="linksRodape"><a href="cursos.html"><i class="fa fa-angle-right"></i> Cursos</a></span></li>
+			<li class="linksRodape"><a href="cotacoes.html"><i class="fa fa-angle-right"></i> Cotações</a></li>
+			<li class="linksRodape"><a href="#"><i class="fa fa-angle-right"></i> Galeria</a></li>
+			<li class="linksRodape"><a href="associese.html"><i class="fa fa-angle-right"></i> Associe-se</a></li>
 		</ul>
 	</nav>
    </div>
    <div class="col-xs-12 col-sm-6 col-md-3">
-	<h1>Endereço</h1>
+     <h1>Contato</h1>
     <address>
-     Rua Odilon Negrão, 578 - Itápolis-SP
+      <span class="glyphicon glyphicon-map-marker"></span><span> Odilon Negrão, 578<br>Itápolis-SP</span>
     </address>
-	<h1>Telefone</h1>
-	<p>(16) 3262-1234</p>
-	<h1>Telefone (FAX)</h1>
-	<p>(16) 3262-5454</p>
+      <div class="tel">
+        <span class="glyphicon glyphicon-earphone"></span><span> (16) 3262-1234</span>
+      </div>
+      <div class="tel">
+        <span><i class="fa fa-fax" aria-hidden="true"></i> (16) 3262-1234</span>
+      </div>
    </div>
    <div class="col-xs-12 col-sm-6 col-md-3">
-    <h1>E-mail</h1>
-	<p>sritapolis@uol.com.br</p>
-  
-    <h1>Facebbok</h1>
-
+    <h1>Redes Sociais</h1>
+    <address> 
+      <span><i class="fa fa-envelope-o" aria-hidden="true"></i> sritapolis@uol.com.br</span>
+    </address>
+      <div class="icones-sociais">
+        <p href="#" target="_blank"><i class="fa fa-facebook"></i> srItápolis</p>
+        <p href="#" target="_blank"><i class="fa fa-twitter"></i> @srItápolis</p>
+        <p href="#" target="_blank"><i class="fa fa-instagram"></i> srItápolis</p>
+      </div>
    </div>
    <div class="col-xs-12 col-sm-6 col-md-3">
     <img src="img/logor.jpg">
@@ -140,8 +148,8 @@
   </div>
  </div>
  <hr>
- <div>
- <p>Desenvolvido por Anderson e André</p>
+ <div class="copyright">
+ <p>© Zavério&Cristiani</p>
  </div>
 </footer>
 <!--Rodapé-->
