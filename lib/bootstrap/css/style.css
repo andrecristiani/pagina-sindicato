@@ -42,10 +42,48 @@ div .container{
 	padding-top: 0px;
 }
 
+div .carousel-inner h3{
+	text-align: center;
+	font-size: 400%;
+	padding-top: 100px;
+}
+
+div .carousel-inner p{
+	text-align: center;
+	font-size: 200%;
+	padding-top: 110px;
+}
+
+div .carousel-inner {
+	position: relative;
+	
+	box-shadow: 1px 1px 4px black/*vertical/horizontal/espalhamento/cor*/
+	
+}
+
+
+div.carousel-inner figcaption {/* figcaption é "filho" de figure*/
+	opacity: 0; /* esconde a legenda */
+	position: absolute;/* posição absoluta dentro da borda*/
+	top:0px;
+	background-color: rgba(0,0,0,.4);/* fundo legenda*/
+	color: white;/* cor letra */
+	width: 100%;/* fundo vai ocupar todo o espaço */
+	height: 100%;
+	padding: 10px;/* espaço da legenda*/
+	box-sizing: border-box;/* cria um box dentro da borda */
+	transition: opacity 1s;/* define o tempo de transição da opacidade */
+}
+
+div.carousel-inner:hover figcaption {/* hover dispara classe especifica ao passar o mouse sobre o objeto */
+	opacity: 1;
+	
+}
+
 .imagem{
 	margin: auto;
 	width: 100%;
-	max-height: 500px;
+	max-height: 600px;
 }
 
 
@@ -55,6 +93,7 @@ footer img{
 }
 
 header{
+
 	position: relative;
 	background-color: #088A29;
 	background-position: 0px 0px;
@@ -78,7 +117,14 @@ header .container {
 	height: 10px;
 }
 
+.navbar-formCursos{
+	margin-top: -75px;
+	width: 90%;
+	margin-left:960px;
+}
+
 .container-fluid {
+	
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -89,9 +135,11 @@ header .container {
 
 
 header .header-orange {
+	
 	background-color: #EE7621;
 	background-position: 0px 0px;
 	height: 20px;
+	
 }
 
 nav li a{
