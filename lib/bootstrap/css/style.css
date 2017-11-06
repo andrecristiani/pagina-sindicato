@@ -147,6 +147,11 @@ nav li a{
 	font-size: 16px;
 }
 
+.navbar-right {
+    float: left !important;
+    margin-left: 100px;
+}
+
 .menuRodape .linksRodape a {
 	padding: 2px 0;
 }
@@ -164,6 +169,13 @@ header img{
 	margin-left: 3%;
 }
 
+.cot{
+	margin-bottom: 20px;
+}
+
+#frm-mensagem{
+	margin-bottom: 20px;
+}
 
 #estatisticas {
 	background-color: #f39c12;
@@ -215,7 +227,7 @@ header img{
 	font-size: 30px;
 }
 
-* Telefones em landscape e abaixo */
+/* Telefones em landscape e abaixo */
 @media (max-width: 480px) { 
 	header{
 		height: 220px;
