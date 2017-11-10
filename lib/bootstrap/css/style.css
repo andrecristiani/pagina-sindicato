@@ -63,7 +63,7 @@ div .carousel-inner {
 
 
 div.carousel-inner figcaption {/* figcaption é "filho" de figure*/
-	opacity: 0; /* esconde a legenda */
+	opacity: 1; /* esconde a legenda */
 	position: absolute;/* posição absoluta dentro da borda*/
 	top:0px;
 	background-color: rgba(0,0,0,.4);/* fundo legenda*/
