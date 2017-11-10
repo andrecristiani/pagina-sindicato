@@ -33,9 +33,20 @@
 			<li><a href="oSindicato.html">O Sindicato</a></li>
             <li><a href="cursos.html">Cursos</a></li>
             <li><a href="cotacoes.html">Cotações</a></li>
-            <li><a href="galeria.hatml">Galeria</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
       <li><a href="associese.html">Associe-se</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><button type="button" class="btn btn-default navbar-btn" data-container="body" data-toggle="popover" data-placement="bottom" data-original-title="" title="">Login</button></li>
+      <div id="popover_content_wrapper" style="display: none">
+  <form action="" role="form">
+    <div class="form-group">
+      <label for="user">User</label>
+      <input type="text" class="form-control" id="user" placeholder="User" />
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Password" />
+    </div>
+      <button type="submit" class="btn btn-default">Sign in</button>
+  </form>
+</div>
            </ul>
            <ul class="nav navbar-nav">
             <form class="navbar-form">
@@ -170,5 +181,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/style.css"/>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+        <div class="col-md-12">
+        <h3>Novo Aluno:</h3>
+        <div class="col-md-6">
+        <form method="POST">
+        <div class="form-group">
+            <label>Nome: </label>
+            <input type="text" class="form-control" id="nomeAluno" placeholder="Nome"/>
+        </div>
+        <div class="row">
+                <div class="form-group col-md-4">
+                    <label>CPF: </label>
+                    <input type="text" class="form-control" id="cpfAluno" placeholder="CPF"/>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>RG: </label>
+                    <input type="text" class="form-control" id="RGAluno" placeholder="RG"/>
+                </div>
+                <div class="form-group col-md-4">
+                        <label>Data Nascimento: </label>
+                        <input type="date" class="form-control" id="nascimentoAluno" placeholder="Data Nascimento"/>
+                </div>
+        </div>
+            <div class="row">
+                <div class="form-group col-md-10">
+                    <label>Logradouro: </label>
+                    <input type="text" class="form-control" id="logradouroAluno" placeholder="Logradouro"/>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Número: </label>
+                    <input type="number" class="form-control" id="numeroAluno" placeholder="Nº"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Documentos: </label>
+                <input type="file" id="documentoAluno"/>
+            </div>
+            <button type="submit" class="btn btn-success">Salvar</button>
+            </form>
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
