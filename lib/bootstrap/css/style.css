@@ -227,6 +227,11 @@ header img{
 	font-size: 30px;
 }
 
+/*FORMULÁRIOS*/
+.forms{
+	margin: auto;
+}
+
 /* Telefones em landscape e abaixo */
 @media (max-width: 480px) { 
 	header{
