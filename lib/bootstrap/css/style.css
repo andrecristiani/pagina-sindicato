@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-	background-color: #FAFAFA !important;
+	background-color: #71C329 !important;
 	margin: 0;
 	font-family: Helvetica;	
 }
@@ -23,6 +23,7 @@ footer p, span, i{
 	color: #FFFFFF;
 }
 
+
 footer .icones-sociais{
 	justify-content: row;
 }
@@ -39,7 +40,39 @@ footer address, footer .tel {
 }
 
 div .container{
+	
 	padding-top: 0px;
+}
+
+.containerOsindicato{
+	
+    margin-top: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: -webkit-center;
+
+}
+
+.containerAssociese{
+	margin-top: 150px;
+}
+
+.container-carrossel{
+	margin-top: 135px;
+}
+
+.container-cotacoes{
+	margin-top: 150px;
+}
+
+.container-cursos{
+	margin-top: 150px;
+}
+
+.containerGaleria{
+	margin-top: 150px;
 }
 
 div .carousel-inner h3{
@@ -123,6 +156,12 @@ header .container {
 	margin-left:960px;
 }
 
+.navbar-formGaleria{
+	margin-top: 30px;
+	width: 40%;
+	margin-left:400px;
+}
+
 .container-fluid {
 	
     padding-right: 15px;
@@ -135,7 +174,7 @@ header .container {
 
 
 header .header-orange {
-	
+
 	background-color: #EE7621;
 	background-position: 0px 0px;
 	height: 20px;

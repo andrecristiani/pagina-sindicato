@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Sindicato Rural de Itápolis</title>
-	<!--<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/anderson.css"/><!--ligação com arquivo CSS-->
-	<!--<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/andre.css"/>-->
+  <!--<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/anderson.css"/><!--ligação com arquivo CSS-->
+  <!--<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/andre.css"/>-->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/style.css"/>
     <script src="lib/jquery/jquery.min.js"></script>
-	
+  </head>
   <body>
   
   
   <!-- Cabeçalho -->
-  <header>
+  <header class="nav navbar-fixed-top">
       <div class="container-logo">
         <img src="img/logof.png" class="logotipo">
       </div>
@@ -51,15 +51,17 @@
     </header>
     <!-- /cabeçalho -->
 
-  
 
+<div class="container containerGaleria">
   <section class="cursos">
     <div class="container">
     <div class="col-md-6">
     <h1>Galeria de Fotos:</h1>
+    </br>
+    </br>
     </div>
     <div class="col-md-6">
-      <form class="navbar-form">
+      <form class="navbar-formGaleria">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Buscar">
           <div class="input-group-btn">
@@ -124,22 +126,22 @@
     </div>
   </div>
   </section>
+</div>
 
-
-	<!--Rodapé-->
+  <!--Rodapé-->
 <footer>
  <div class="container">
   <div class="row">
    <div class="col-xs-12 col-sm-6 col-md-3">
-	<h1>Menu</h1>
+  <h1>Menu</h1>
     <nav class="menuRodape">
-		<ul class="nav">
-			<li class="linksRodape"><a href="cursos.html"><i class="fa fa-angle-right"></i> Cursos</a></span></li>
-			<li class="linksRodape"><a href="cotacoes.html"><i class="fa fa-angle-right"></i> Cotações</a></li>
-			<li class="linksRodape"><a href="galeria.html"><i class="fa fa-angle-right"></i> Galeria</a></li>
-			<li class="linksRodape"><a href="associese.html"><i class="fa fa-angle-right"></i> Associe-se</a></li>
-		</ul>
-	</nav>
+    <ul class="nav">
+      <li class="linksRodape"><a href="cursos.html"><i class="fa fa-angle-right"></i> Cursos</a></span></li>
+      <li class="linksRodape"><a href="cotacoes.html"><i class="fa fa-angle-right"></i> Cotações</a></li>
+      <li class="linksRodape"><a href="galeria.html"><i class="fa fa-angle-right"></i> Galeria</a></li>
+      <li class="linksRodape"><a href="associese.html"><i class="fa fa-angle-right"></i> Associe-se</a></li>
+    </ul>
+  </nav>
    </div>
    <div class="col-xs-12 col-sm-6 col-md-3">
      <h1>Contato</h1>
@@ -176,7 +178,7 @@
 </footer>
 <!--Rodapé-->
 
-	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
