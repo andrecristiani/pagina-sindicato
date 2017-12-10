@@ -4,6 +4,7 @@ body{
 	background-color: #04B404 !important;
 }
 
+/*----- Rodape -----*/
 footer h1{
 	text-transform: uppercase;
     font-size: 18px;
@@ -35,11 +36,6 @@ div .container{
 	
 }
 
-
-
-
-
-
 footer img{
 	padding-top: 20px;
 	width: 120px;
@@ -59,4 +55,7 @@ footer img{
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+
+
 
