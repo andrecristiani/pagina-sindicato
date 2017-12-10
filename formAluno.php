@@ -19,62 +19,58 @@
         <form method="POST">
         <div class="form-group">
             <label>Nome: </label>
-            <input type="text" class="form-control" id="nomeAluno" placeholder="Nome"/>
+            <input type="text" class="form-control" id="nomeAluno" name="nome" placeholder="Nome"/>
         </div>
         <div class="row">
                 <div class="form-group col-md-4">
                     <label>CPF: </label>
-                    <input type="text" class="form-control" id="cpfAluno" placeholder="CPF"/>
+                    <input type="text" class="form-control" id="cpfAluno" name="cpf" placeholder="CPF"/>
                 </div>
                 <div class="form-group col-md-4">
                     <label>RG: </label>
-                    <input type="text" class="form-control" id="RGAluno" placeholder="RG"/>
+                    <input type="text" class="form-control" id="RGAluno" name="rg" placeholder="RG"/>
                 </div>
                 <div class="form-group col-md-4">
                         <label>Data de Nascimento: </label>
-                        <input type="date" class="form-control" id="nascimentoAluno"/>
+                        <input type="date" class="form-control" name="nascimento" id="nascimentoAluno"/>
                 </div>
         </div>
             <div class="row">
                 <div class="form-group col-md-7">
                     <label>Logradouro: </label>
-                    <input type="text" class="form-control" id="logradouroAluno" placeholder="Logradouro"/>
+                    <input type="text" class="form-control" id="logradouroAluno" name="logradouro" placeholder="Logradouro"/>
                 </div>
                 <div class="form-group col-md-2">
                     <label>Número: </label>
-                    <input type="number" class="form-control" id="numeroAluno" placeholder="Nº"/>
+                    <input type="number" class="form-control" id="numeroAluno" name="numero" placeholder="Nº"/>
                 </div>
                 <div class="form-group col-md-3">
                     <label>Complemento: </label>
-                    <input type="text" class="form-control" id="complementoAluno" placeholder="Complemento"/>
+                    <input type="text" class="form-control" id="complementoAluno" name="complemento" placeholder="Complemento"/>
                 </div>
             </div>
              <div class="row">
                 <div class="form-group col-md-3">
                     <label>Bairro: </label>
-                    <input type="text" class="form-control" id="bairroAluno" placeholder="Bairro"/>
+                    <input type="text" class="form-control" id="bairroAluno" name="bairro" placeholder="Bairro"/>
                 </div>
                 <div class="form-group col-md-3">
                     <label>CEP: </label>
-                    <input type="number" class="form-control" id="cepAluno" placeholder="00000-000"/>
+                    <input type="number" class="form-control" id="cepAluno" name="cep" placeholder="00000-000"/>
                 </div>
                 <div class="form-group col-md-3">
                     <label>Cidade: </label>
-                    <input type="text" class="form-control" id="cidadeAluno" placeholder="Cidade"/>
+                    <input type="text" class="form-control" id="cidadeAluno" name="cidade" placeholder="Cidade"/>
                 </div>
                 <div class="form-group col-md-3">
                     <label>Estado: </label>
-                    <select id="cbCidade" class="form-control" id="estadoAluno"/>
+                    <select id="cbCidade" class="form-control" name="estado" id="estadoAluno"/>
                     <option>SP</option>
                     <option>MG</option>
                     <option>RJ</option>
                     <option>ES</option>
                     </select>
                 </div>
-            </div>
-            <div class="form-group">
-                <label>Documentos: </label>
-                <input type="file" id="documentoAluno"/>
             </div>
             <button type="submit" class="btn btn-success">Salvar</button>
             </br>
@@ -88,3 +84,20 @@
     </section>
 </body>
 </html>
+
+
+<?php
+    include("conexao.php");
+    extract($_REQUEST, EXTR_OVERWRITE);
+
+    if(isset($nome)){
+        $query = "insert into aluno(nome, cpf, rg, dataNascimento, logradouro, numero, complemento, bairro, cep, cidade, estado) values ('$nome', '$cpf', '$rg', '$nascimento', '$logradouro', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$estado')";
+        $result = mysqli_query($conexao, $query);
+
+        if($result)
+            echo "Cadastro inserido com sucesso!";
+        else
+            echo "Erro ao cadastrar produto!";
+        }
+    }
+?>
