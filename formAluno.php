@@ -98,6 +98,5 @@
             echo "Cadastro inserido com sucesso!";
         else
             echo "Erro ao cadastrar produto!";
-        }
     }
 ?>
